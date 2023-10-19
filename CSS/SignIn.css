@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alert {
+    color: #fff;
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left {
+    width: 60%;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 3rem;
+}
+
+.left .navbar {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
+}
+
+.left .navbar img {
+    width: 7rem;
+    scale: 1;
+    transition: .5s;
+}
+
+.navbar img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.back {
+    margin-top: .2rem;
+    margin-left: 22rem;
+}
+
+.back i {
+    position: relative;
+    top: .15rem;
+    right: .2rem;
+}
+
+.heading h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    width: 95%;
+    margin-top: 5rem;
+}
+
+.form-box {
+    position: relative;
+    width: 30rem;
+    height: 23rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.inputbox {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 28rem;
+}
+
+.inputbox label {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 23.5rem;
+    color: black;
+    font-size: 1em;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    border: none;
+    background-color: #F7F7F7;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 28rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-box .btn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    border: .2rem solid black;
+    color: white;
+    margin-top: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: black;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.register {
+    font-size: .9em;
+    color: grey;
+    margin: 25px 0 10px;
+}
+
+.register a {
+    color: #44A2C4;
+    font-weight: 500;
+    font-size: .9rem;
+    transition: .2s;
+}
+
+.register a:hover {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.right {
+    width: 40%;
+    height: 100vh;
+    background-color: #F8F6F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.right p {
+    position: relative;
+    top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.7;
+    width: 74%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial img {
+    position: relative;
+    top: 1.4rem;
+}
+
+.testimonial span {
+    position: relative;
+    left: 2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.testimonial #span1 {
+    position: relative;
+    top: .1rem;
+    left: 4.7rem;
+    color: grey;
+    font-weight: 300;
+}
+
+
+/* BreakPoints */
+@media (max-width: 768px) {
+    html {
+        font-size: 94%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .heading h2 {
+        margin-top: 0;
+    }
+
+    .left .back {
+        margin-left: 16rem;
+    }
+
+    .register {
+        margin-bottom: 2rem;
+    }
+
+    .right {
+        background: #F8F6F0;
+        margin: 0;
+        padding-left: 7.8rem;
+        height: 30vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .review {
+        height: 150%;
+    }
+
+    .right .review p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 75%;
+    }
+
+    .left {
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .left .heading h2 {
+        margin-top: 1rem;
+    }
+
+    .back {
+        margin-left: 10rem !important;
+    }
+
+    .register {
+        font-size: 1rem;
+    }
+
+    .register a {
+        font-size: 1rem;
+    }
+
+    .right {
+        height: 32vh;
+        padding: 3rem;
+        padding-top: 0;
+        overflow-y: hidden;
+    }
+
+    .review {
+        height: 100%;
+    }
+
+    .right .review p {
+        top: 1rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .right .testimonial {
+        bottom: 3rem;
+    }
+
+    .testimonial #span1 {
+        left: 5.7rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 70%;
+    }
+
+    .right .review p {
+        width: 100%;
+    }
+
+    .left .navbar img {
+        width: 8rem;
+    }
+
+    .left .navbar a {
+        font-size: 1.1rem;
+    }
+
+    .back {
+        margin-left: 7.5rem !important;
+    }
+}
+
+@media (max-width: 325px) {
+    html {
+        font-size: 65%;
+    }
+
+    .right {
+        width: 108%;
+        height: 39vh;
+    }
+
+    .back {
+        margin-left: 4rem !important;
+    }
+}

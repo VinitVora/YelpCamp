@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 2rem;
+    border: none;
+    border-radius: 0;
+}
+
+.alert p {
+    color: #fff;
+    position: relative;
+    bottom: .75rem;
+}
+
+.alert span {
+    color: #75A8DC;
+    text-decoration: underline;
+}
+
+.alert1 {
+    color: #fff;
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.btn-close {
+    filter: invert(1);
+    width: 59rem;
+    height: .6rem;
+    font-size: .75rem;
+    transition: .5s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 4rem;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left img {
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+.left a {
+    color: grey;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    top: .1rem;
+}
+
+.left #home {
+    position: relative;
+    top: .3rem;
+}
+
+.right {
+    margin-right: .3rem;
+}
+
+.right a {
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.right a:nth-child(1) {
+    color: grey;
+    font-weight: 700;
+}
+
+.right a:nth-child(2) {
+    color: grey;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 95%;
+    margin: 2rem .5rem 1rem 1rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.form-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputbox {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.inputbox label {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 25.8rem;
+    color: grey;
+    font-size: 1em;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: .5rem;
+}
+
+.inputbox #name {
+    left: .2rem;
+    margin-bottom: .5rem;
+}
+
+.inputbox #price {
+    left: .2rem;
+}
+
+.inputbox #image {
+    bottom: 2.5rem;
+    left: -0.9rem;
+    background-color: transparent;
+}
+
+.inputbox #msg {
+    position: relative;
+    bottom: -0.3rem;
+    left: .1rem;
+    background-color: #F7F7F7;
+    border: none;
+    padding: 1rem 1rem;
+}
+
+.inputbox input{
+    border: none;
+}
+
+.inputbox #msg1 {
+    bottom: 10.3rem;
+    left: .1rem;
+}
+
+
+/* Adjust the positioning of the label to look like a button */
+.inputbox label[for="file"] {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    padding: 1rem;
+    background-color: #F7F7F7;
+    color: gray;
+    border: none;
+}
+
+.inputbox input {
+    width: 30rem;
+    height: 3rem;
+    font-size: 1em;
+    padding: 0 1rem 0 1rem;
+    border: none;
+    background-color: #F7F7F7;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30.3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-box .btn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    border: .2rem solid black;
+    color: white;
+    margin-top: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: black;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.footer {
+    width: 8rem;
+    margin-bottom: 2rem;
+}

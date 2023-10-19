@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 2rem;
+    border: none;
+    border-radius: 0;
+}
+
+.alert p {
+    color: #fff;
+    position: relative;
+    bottom: .75rem;
+}
+
+.alert span {
+    color: #75A8DC;
+    text-decoration: underline;
+}
+
+.btn-close {
+    filter: invert(1);
+    width: 59rem;
+    height: .6rem;
+    font-size: .75rem;
+    transition: .5s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 7rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#left img {
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+#left a {
+    color: grey;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    top: .1rem;
+}
+
+#right{
+    margin-right: .3rem;
+}
+
+#right a {
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+#right a:nth-child(1){
+    color: grey;
+    font-weight: 700;
+}
+
+#right a:nth-child(2){
+    color: grey;
+}
+
+.btn-box {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-box .btn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    border: .1rem solid black;
+    color: white;
+    margin-top: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: black;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.container .left {
+    height: 100%;
+    margin-left: -1rem;
+    margin-right: 5rem;
+}
+
+.left .map {
+    padding: 3rem;
+    border: .2rem solid #f3f3f3fe;
+}
+
+.container .right {
+    height: 100%;
+}
+
+.campground .camp-details {
+    border-radius: .2em;
+    border: .2rem solid #f3f3f3fe;
+    width: 40rem;
+    height: 33rem;
+    padding: 2rem 1rem 1rem 3rem;
+}
+
+.campground .camp-details img {
+    border-radius: .2rem;
+    height: 20rem;
+    width: 33rem;
+}
+
+.camp-details .p1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    margin-right: 6rem;
+    width: 33rem;
+}
+
+.camp-details span {
+
+    margin-left: 19rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.camp-details .p2 {
+    font-weight: 300;
+    width: 90%;
+}
+
+.page2 {
+    /* border: .2rem solid red; */
+    margin-top: 2rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.page2 .review {
+    display: flex;
+    flex-direction: column;
+    border: .2rem solid #f3f3f3fe;
+}
+
+.review .review-details {
+    border-bottom: .1rem solid #f3f3f3fe;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.review-details p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 6rem;
+    width: 33rem;
+}
+
+.review-details span {
+    margin-left: 22rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.review-details p:nth-child(2) {
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.review .btn-box {
+    margin: 3rem 0 2rem 25.7rem;
+    width: 12rem;
+}
+
+.review .btn-box .btn img {
+    padding-right: 1rem;
+}
+
+.review .btn-box .btn:hover img {
+    filter: invert(100%);
+    transition: 0.1s ease;
+}
+
+.footer{
+    margin-bottom: 2rem;
+}

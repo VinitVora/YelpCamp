@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="../CSS/SignIn.css">
+</head>
+
+<body>
+    <div class="main" id="main">
+
+        <!-- Left Side of the Page -->
+        <div class="left" id="left">
+
+            <!-- Navbar -->
+            <div class="navbar">
+                <a href="../HTML/LandingPage.html"><img src="../img/Logo.svg" alt=""></a>
+                <a href="../HTML/SearchPage(NotLoggedIn).html" target="_blank" class="back"><i
+                        class='bx bx-arrow-back'></i>Back to campgrounds</a>
+            </div>
+
+            <div class="heading">
+                <h2>Start exploring camps from all around the world.</h2>
+            </div>
+
+            <!-- SignIn Form -->
+            <div class="form-box" id="signupForm" onsubmit="signIn()">
+                <div class="form-value">
+                    <form action="" id="signupForm">
+                        <div class="alert">Login Successful!!</div>
+
+                        <div class="inputbox">
+                            <input type="text" id="text" placeholder="johndoe_91" required autocomplete="text">
+                            <label for="text">Username</label>
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="password" id="password" placeholder="Choose password" required autocomplete="current-password">
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="btn-box">
+                            <a href="../HTML/SearchPage(LoggedIn).html" onclick="signIn()" class="btn">Login</a>
+                        </div>
+
+                        <div class="register">
+                            <p>Not a user yet? <a href="SignUp.html">Create an account</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side of the Form -->
+        <div class="right" id="right">
+            <div class="review">
+                <p>"YelpCamp has honestly saved me hours of research time, and the camps on here are definitely well
+                    picked and added."</p>
+
+                <div class="testimonial">
+                    <img src="../img/User Testimonial.svg" alt="">
+                    <span>May Andrews <br></span>
+                    <span id="span1">Professional Hiker</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

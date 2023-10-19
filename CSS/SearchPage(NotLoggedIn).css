@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 2rem;
+    border: none;
+    border-radius: 0;
+}
+
+.alert p {
+    color: #fff;
+    position: relative;
+    bottom: .75rem;
+}
+
+.alert span {
+    color: #75A8DC;
+    text-decoration: underline;
+}
+
+.btn-close {
+    filter: invert(1);
+    width: 59rem;
+    height: .6rem;
+    font-size: .75rem;
+    transition: .5s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 4rem;
+    width: 100%;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    z-index: 101;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+.left a {
+    color: grey;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    top: .1rem;
+}
+
+.right a {
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.btn-box {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-box .btn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    border: .1rem solid black;
+    color: white;
+    margin-top: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: black;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.page1 {
+    min-height: 40vh;
+    background-color: #F8F6F0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+
+.page1 h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.page1 p {
+    width: 29%;
+    margin-left: .1rem;
+}
+
+.search {
+    display: flex;
+}
+
+.search p {
+    display: flex;
+}
+
+.search img {
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
+    width: 2rem;
+    z-index: 99;
+}
+
+.search .input-box {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 30rem;
+    position: relative;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.search input::placeholder {
+    padding-left: 2.7rem;
+    z-index: 99;
+}
+
+.btn-box .btn.btn2 {
+    position: relative;
+    bottom: 1.2rem;
+    right: 3.5rem;
+    margin-left: 4rem;
+    width: 6rem;
+    height: 3rem;
+}
+
+.page1 .a {
+    color: grey;
+    margin-top: -1.5rem;
+    text-decoration: none;
+}
+
+.page1 .a:hover {
+    text-decoration: underline;
+}
+
+.modal-title {
+    white-space: nowrap;
+}
+
+.page2 {
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.campgrounds {
+    display: flex;
+}
+
+.campgrounds .camp-details {
+    border-radius: .2em;
+    box-shadow: 0.2rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+    padding-left: 1rem;
+    margin-right: 8.5rem;
+    margin-bottom: 2rem;
+    height: 24rem;
+}
+
+.campgrounds .camp-details img {
+    height: 11rem;
+    width: 20rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+    border-radius: .2rem;
+}
+
+.campgrounds .camp-details .p1 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.campgrounds .camp-details .p2 {
+    width: 95%;
+    margin-bottom: .5rem;
+}
+
+.camp-details .btn-box {
+    width: 19rem;
+    height: 3rem;
+}
+
+.camp-details .btn-box .btn {
+    background: transparent;
+    color: black;
+    font-weight: 400;
+}
+
+.camp-details .btn-box .btn::before {
+    background-color: black;
+}
+
+.camp-details .btn-box .btn:hover {
+    color: #fff;
+}
+
+.camp-details .btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.footer {
+    margin-bottom: 2rem;
+}

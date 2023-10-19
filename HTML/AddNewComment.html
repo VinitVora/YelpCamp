@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/AddNewComment.css">
+
+    <!-- Alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close pb-1 " data-bs-dismiss="alert" aria-label="Close"></button>
+        <p class="text-center">This project was made by <span>Colt Steele</span> and designed by <span>Codewell</span>
+        </p>
+    </div>
+
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="left">
+                <a href="../HTML/LandingPage.html"><img src="../img/Logo.svg" alt=""></a>
+                <a href="../HTML/SearchPage(LoggedIn).html" id="home">Home</a>
+            </div>
+            <div class="right">
+                <a href="#" target="_blank" id="username"></a>
+                <a href="../HTML/SignIn.html" target="_blank">Logout</a>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="heading">
+            <h2>Add New Comment</h2>
+        </div>
+
+        <!-- Add Campground -->
+        <div class="form-box" id="signupForm">
+            <div class="form-value">
+                <form action="" id="signupForm">
+                    <div class="alert1">Comment added Successfully!!</div>
+
+                    <div class="inputbox">
+                        <textarea name="" id="msg" cols="54" rows="5" placeholder="This was probably the best camp i've visited this past year, definitely recommend visiting any time soon." required></textarea>
+                        <label id="msg1" for="msg">Description</label>
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="../HTML/SearchPage(LoggedIn).html" class="btn">Post Comment</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="../img/Logo.svg" alt="">
+        </footer>
+    </div>
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../JS/AddCampground.js"></script>
+</body>
+
+</html>

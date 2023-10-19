@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/IndividualCampgroundPage(NotLoggedIn).css">
+</head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close pb-1 " data-bs-dismiss="alert" aria-label="Close"></button>
+        <p class="text-center">This project was made by <span>Colt Steele</span> and designed by <span>Codewell</span>
+        </p>
+    </div>
+
+    <div class="main">
+
+        <div class="navbar">
+
+            <div id="left">
+                <a href="../HTML/LandingPage.html"><img src="../img/Logo.svg" alt=""></a>
+                <a href="../HTML/SearchPage(NotLoggedIn).html">Home</a>
+            </div>
+
+            <div id="right">
+                <a href="../HTML/SignIn.html" target="_blank">Login</a>
+                <div class="btn-box">
+                    <a href="../HTML/SignUp.html" target="_blank" class="btn">Create an Account</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <div class="map">
+                    <img src="../img/Map.png" alt="">
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="page1">
+                    <div class="campground">
+                        <div class="camp-details">
+                            <img src="../img/Camp Images/Compressed Images/Mount Ulap.jpg" alt="">
+                            <p class="p1">Mount Ulap <span>$104.99/night</span> </p>
+                            <p class="p2">Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail
+                                located
+                                near Tuba, Benguet, Philippines that offers the chance to see wildlife and is rated as
+                                moderate. The trail is primarily used for hiking.</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Want to add a Comment??</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Please Create an account / Login to an existing one to add a comment</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <a href="../HTML/SignUp.html" type="button" class="btn btn-dark" target="_blank">Create an Account</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+                <div class="page2">
+                    <div class="review">
+                        <div class="review-details">
+                            <p>Adam Jones <span>13h ago</span> </p>
+                            <p>Honestly one of the best experiences ever, took us a while to figure out how to get there
+                                but
+                                it was amazing!</p>
+                        </div>
+
+                        <div class="review-details">
+                            <p>Isaac Dylan <span>1 day ago</span> </p>
+                            <p>Traveling changes you as a person, you gain more perspective, this is the perfect spot to
+                                do
+                                that.</p>
+                        </div>
+
+                        <div class="review-details">
+                            <p>Hudson Luca <span>3 days ago</span> </p>
+                            <p>Definitely recommend going there, not too far and not a lot of people to ruin the
+                                experience.
+                            </p>
+                        </div>
+
+                        <div class="btn-box">
+                            <a id="openModal" type="submit" href="#" class="btn"> <img src="../img/Chat Bubble.svg" alt=""> Leave a Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <img src="../img/Logo.svg" alt="">
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                displayModal();
+            });
+    
+            function displayModal() {
+                const openModalLink = document.getElementById('openModal');
+                const modal = new bootstrap.Modal(document.getElementById('modal'));
+    
+                openModalLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    modal.show();
+                });
+            }
+    </script>
+</body>
+
+</html>
